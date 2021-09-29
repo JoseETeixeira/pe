@@ -76,6 +76,7 @@ add_executable(SparseVoxelOctree
 		)
 
 find_package(Threads REQUIRED)
-target_link_libraries(SparseVoxelOctree PRIVATE dep shader Threads::Threads)
+find_package(EnTT REQUIRED)
+target_link_libraries(SparseVoxelOctree PRIVATE dep shader Threads::Threads EnTT::EnTT)
 
 install(TARGETS SparseVoxelOctree RUNTIME DESTINATION)

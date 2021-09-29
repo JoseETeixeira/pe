@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
 project(dep)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "-std=c++2a")
 
 # Windows' math include does not define constants by default.
 # Set this definition so it does.
@@ -26,10 +27,6 @@ add_library(dep STATIC
 		tiny_obj_loader.cpp
 		tinyfiledialogs.c
 		tinyexr.cc
-
-		#EnTT
-		entt/entt.hpp
-		entt/fwd.hpp
 
 		# IMGUI
 		imgui/imgui.cpp
