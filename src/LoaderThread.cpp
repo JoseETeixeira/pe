@@ -48,6 +48,7 @@ void LoaderThread::thread_func(const char *filename, uint32_t octree_level) {
 	std::shared_ptr<myvk::CommandPool> main_command_pool = myvk::CommandPool::Create(m_main_queue);
 	std::shared_ptr<myvk::CommandPool> loader_command_pool = myvk::CommandPool::Create(m_loader_queue);
 
+	/* TODO: make this render for every entity on EnTT */
 	std::shared_ptr<Scene> scene;
 	if ((scene = Scene::Create(m_loader_queue, filename, &m_notification))) {
 		std::shared_ptr<Voxelizer> voxelizer = Voxelizer::Create(scene, loader_command_pool, octree_level);

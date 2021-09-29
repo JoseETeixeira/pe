@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/eduardo/29F419E21696543C/Projects/Pessoal/ParadiseEngine/pe/dep/tinyfiledialogs.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+ctype.h
+-
+sys/stat.h
+-
+windows.h
+-
+commdlg.h
+-
+shlobj.h
+-
+conio.h
+-
+direct.h
+-
+limits.h
+-
+unistd.h
+-
+dirent.h
+-
+termios.h
+-
+sys/utsname.h
+-
+signal.h
+-
+tinyfiledialogs.h
+/media/eduardo/29F419E21696543C/Projects/Pessoal/ParadiseEngine/pe/dep/tinyfiledialogs.h
+
+/media/eduardo/29F419E21696543C/Projects/Pessoal/ParadiseEngine/pe/dep/tinyfiledialogs.h
+
