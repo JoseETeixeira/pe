@@ -27,6 +27,10 @@ add_library(dep STATIC
 		tinyfiledialogs.c
 		tinyexr.cc
 
+		#EnTT
+		entt/entt.hpp
+		entt/fwd.hpp
+
 		# IMGUI
 		imgui/imgui.cpp
 		imgui/imgui_draw.cpp
