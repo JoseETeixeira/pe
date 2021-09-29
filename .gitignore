@@ -1,0 +1,7 @@
+*.o
+*.log
+*.internal
+*.make
+*.cmake
+*.out
+*.a
